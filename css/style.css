@@ -5,7 +5,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: red !important;
 }
 
 a,
@@ -96,7 +95,7 @@ a:hover {
 }
 
 .texture-paper::before {
-  background: url("img/texture-paper.png");
+  background: url("../img/texture-paper.png");
   background-size: 280px 280px;
 }
 
@@ -827,7 +826,7 @@ h4 {
 }
 
 .bg-dots-bg {
-  background-image: url("img/dots-bg.png");
+  background-image: url("../img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -1056,4 +1055,8 @@ h4 {
   .bloc-mob-center-text {
     text-align: center;
   }
+}
+
+.font-color-black {
+  color: #000000 !important;
 }
