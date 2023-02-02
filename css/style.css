@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: red !important;
 }
 
 a,
@@ -95,7 +96,7 @@ a:hover {
 }
 
 .texture-paper::before {
-  background: url("/img/texture-paper.png");
+  background: url("img/texture-paper.png");
   background-size: 280px 280px;
 }
 
