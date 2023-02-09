@@ -520,6 +520,7 @@ button {
   flex-direction: column;
   max-width: 300px;
   margin: 20px;
+  font-size: 16px;
 }
 
 .scrollToTop {
@@ -1076,4 +1077,8 @@ a:focus-within {
 
 .effect:hover {
   border-bottom: 2px solid black;
+}
+
+.contact {
+  font-size: 14px;
 }
