@@ -1069,3 +1069,11 @@ a:focus-within {
 .citation {
   font-size: 16px;
 }
+
+.effect {
+  border-bottom: 2px solid transparent;
+}
+
+.effect:hover {
+  border-bottom: 2px solid black;
+}
