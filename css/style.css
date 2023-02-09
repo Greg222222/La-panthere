@@ -528,7 +528,7 @@ button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  opacity: 0;
+  opacity: 1;
   z-index: 500;
   transition: all 0.3s ease-in-out;
 }
@@ -591,12 +591,15 @@ a[data-lightbox]:hover img {
 
 .lightbox-caption {
   padding: 20px;
-  color: #fff;
+  color: black;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 15px;
   right: 15px;
   bottom: 5px;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .close-lightbox {
@@ -864,13 +867,13 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -888,10 +891,6 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-  }
   .bloc-group,
   .bloc-group .bloc {
     display: block;
@@ -900,8 +899,6 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
   }
 }
 
@@ -1059,4 +1056,12 @@ h4 {
 
 .font-color-black {
   color: #000000 !important;
+}
+
+a:focus-within {
+  border: 3px solid blue;
+}
+
+.size-text-gallery {
+  font-size: 16px;
 }
