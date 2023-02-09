@@ -1055,7 +1055,7 @@ h4 {
 }
 
 .font-color-black {
-  color: #000000 !important;
+  color: black !important;
 }
 
 a:focus-within {
